@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
 
 import 'core/theme/app_theme.dart';
-import 'features/splash/screens/splash_screen.dart';
+import 'features/home/screens/home_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const ShopEasyApp());
+  runApp(const EasyShopApp());
 }
 
-class ShopEasyApp extends StatelessWidget {
-  const ShopEasyApp({super.key});
+class EasyShopApp extends StatelessWidget {
+  const EasyShopApp({super.key});
 
   @override
-  Widget build(BuildContext context) => MaterialApp(
-    title: 'ShopEasy',
-    debugShowCheckedModeBanner: false,
-    theme: AppTheme.lightTheme,
-    home: const SplashScreen(),
-  );
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'EasyShop',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.lightTheme,
+      home: const HomeScreen(),
+    );
+  }
 }
