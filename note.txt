@@ -1,0 +1,2 @@
+buổi trước làm giao diện đăng nhập, đăng ký và trang profile 
+học những widget mới
