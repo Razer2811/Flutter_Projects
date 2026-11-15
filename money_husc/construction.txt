@@ -1,0 +1,18 @@
+lib/
+├── main.dart                         ★ sửa: chỉ khởi động app
+├── core/
+│   ├── app_colors.dart               ★ bảng màu nền tối
+│   └── app_theme.dart                ★ ThemeData tối
+├── screens/                          ← mỗi màn hình một file
+│   ├── main_shell.dart               ★ khung: thanh dưới + nút + và đổi tab
+│   ├── placeholder_page.dart         ★ trang tạm cho 3 tab chưa làm
+│   └── overview/
+│       ├── overview_page.dart        ★ chỉ ghép các khối lại
+│       └── widgets/                  ← khối chỉ dùng cho màn Tổng quan
+│           ├── balance_header.dart   ★ số dư, mắt, tìm kiếm, chuông
+│           ├── wallet_card.dart      ★ thẻ "Ví của tôi"
+│           ├── premium_banner.dart   ★ biển Premium
+│           └── report_card.dart      ★ hai tab chi/thu + khung biểu đồ
+└── widgets/                          ← khối dùng chung nhiều màn hình
+    ├── app_bottom_bar.dart           ★ thanh dưới
+    └── section_header.dart           ★ dòng "tiêu đề ... hành động"
