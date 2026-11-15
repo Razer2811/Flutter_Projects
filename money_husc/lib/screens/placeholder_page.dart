@@ -5,7 +5,7 @@ import '../core/app_colors.dart';
 class PlaceholderPage extends StatelessWidget {
   final String title;
 
-  const PlaceholderPage({super.key, required this.title});
+  const PlaceholderPage(this.title, {super.key});
 
   @override
   Widget build(BuildContext context) {
