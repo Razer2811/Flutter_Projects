@@ -11,3 +11,10 @@ String vnd(int v) {
 
 /// "1.250.000" -> 1250000
 int parseVnd(String s) => int.parse(s.replaceAll('.', ''));
+
+/// DateTime -> "dd/MM/yyyy"
+String dmy(DateTime d) {
+  final day = d.day.toString().padLeft(2, '0');
+  final month = d.month.toString().padLeft(2, '0');
+  return '$day/$month/${d.year}';
+}

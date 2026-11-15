@@ -5,6 +5,7 @@ import 'models/category.dart';
 import 'models/txn.dart';
 import 'widgets/txn_row.dart';
 import 'data/database.dart';
+import 'screens/add_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -140,9 +141,9 @@ class _TransactionFormState extends State<_TransactionForm> {
     } catch (error) {
       if (!mounted) return;
       setState(() => _saving = false);
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Không thể lưu dữ liệu: $error')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('Không thể lưu dữ liệu: $error')));
     }
   }
 
