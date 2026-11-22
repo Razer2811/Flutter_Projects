@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import 'product.dart';
+import '../product.dart';
 
 Future<void> layMotSanPham() async {
   final dio = Dio();
