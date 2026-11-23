@@ -16,3 +16,7 @@ lib/
 └── widgets/                          ← khối dùng chung nhiều màn hình
     ├── app_bottom_bar.dart           ★ thanh dưới
     └── section_header.dart           ★ dòng "tiêu đề ... hành động"
+
+
+
+Buổi hôm nay sẽ làm
