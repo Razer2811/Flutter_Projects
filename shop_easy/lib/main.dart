@@ -1,16 +1,23 @@
 import 'package:material_ui/material_ui.dart';
 
-import 'features/splash/screens/splash_screen.dart';
+import 'core/theme/app_theme.dart';
+import 'features/auth/screens/login_screen.dart';
 
 void main() {
-  runApp(const MainApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const ShopEasyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class ShopEasyApp extends StatelessWidget {
+  const ShopEasyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: SplashScreen());
+    return MaterialApp(
+      title: 'ShopEasy',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.lightTheme,
+      home: const DangNhap(),
+    );
   }
 }

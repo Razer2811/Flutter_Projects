@@ -1,5 +1,4 @@
-Làm lại bài tập giao diện đầu tiên 
-Làm lại bài tập giao diện SideBar
+
 Làm lại những giao diện trong dự án shop_easy : Login, Register, Quên Mật khẩu, Profile
 Làm lại những giao diện trong dự án shop_easy : trang danh sách mặt hàng, chi tiết mặt hàng, giỏ hàng
 Làm lại về bài tập API, danh sách sản phẩm
